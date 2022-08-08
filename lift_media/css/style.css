@@ -81,13 +81,18 @@ h6 {
 /* connection fonts */
 
 @font-face {
-  font-family: Himagsikan;
-  src: url(src/fonts/himagsikan.otf);
+  font-family: "Himagsikan";
+  src: url(../src/fonts/himagsikan.otf) format("otf");
 }
 
 @font-face {
-  font-family: Graphik;
-  src: url(src/fonts/GraphikMedium.otf);
+  font-family: "Graphik-Semibold";
+  src: url(../src/fonts/Graphik-Semibold.ttf) format("tff");
+}
+
+@font-face {
+  font-family: "Graphik-Medium";
+  src: url(../src/fonts/Graphik-Medium.ttf) format("ttf");
 }
 
 /*---WRAPPER--------------------------------------------------------------------------*/
@@ -125,7 +130,21 @@ h6 {
   background: -o-linear-gradient(359.82deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
   background: linear-gradient(90.18deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
   border-radius: 0px 0px 15px 15px;
-  font-family: Graphik;
+  font-family: Graphik-Semibold;
+}
+
+.header__logo {
+  width: 42px;
+  height: 42px;
+  margin-top: 15px;
+  margin-left: 27px;
+}
+
+.header__searcher {
+  width: 516px;
+  height: 48px;
+  border: 1px solid #412366;
+  border-radius: 16px;
 }
 
 @media (max-width: 992px) {

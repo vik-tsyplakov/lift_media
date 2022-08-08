@@ -43,7 +43,7 @@
     rgba(49, 24, 79, 0.57) 100%
   );
   border-radius: 0px 0px 15px 15px;
-  font-family: Graphik;
+  font-family: Graphik-Semibold;
 }
 @media (max-width: 992px) {
   .header__block {
@@ -59,4 +59,16 @@
   .header__block {
     margin: 0 15px;
   }
+}
+.header__logo {
+  width: 42px;
+  height: 42px;
+  margin-top: 15px;
+  margin-left: 27px;
+}
+.header__searcher {
+  width: 516px;
+  height: 48px;
+  border: 1px solid #412366;
+  border-radius: 16px;
 }
