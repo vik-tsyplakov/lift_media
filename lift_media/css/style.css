@@ -81,18 +81,20 @@ h6 {
 /* connection fonts */
 
 @font-face {
-  font-family: Name;
-  src: url();
+  font-family: Himagsikan;
+  src: url(src/fonts/himagsikan.otf);
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(src/fonts/GraphikMedium.otf);
 }
 
 /*---WRAPPER--------------------------------------------------------------------------*/
 
 ._container {
-  max-width: 1046px;
-  padding: 0px 15px;
+  max-width: 1440px;
   margin: 0px auto;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 
 .wrapper {
@@ -107,4 +109,39 @@ h6 {
           flex-direction: column;
 }
 
-/*-----------------------------------------------------------------------------------*/
+/*---HEADER--------------------------------------------------------------------------*/
+
+.header__container {
+  max-height: 596px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#110620), to(#2b0c51));
+  background: -o-linear-gradient(top, #110620 0%, #2b0c51 100%);
+  background: linear-gradient(180deg, #110620 0%, #2b0c51 100%);
+}
+
+.header__block {
+  max-width: 1296px;
+  height: 80px;
+  margin: 0 72px;
+  background: -o-linear-gradient(359.82deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
+  background: linear-gradient(90.18deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
+  border-radius: 0px 0px 15px 15px;
+  font-family: Graphik;
+}
+
+@media (max-width: 992px) {
+  .header__block {
+    margin: 0 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__block {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__block {
+    margin: 0 15px;
+  }
+}
