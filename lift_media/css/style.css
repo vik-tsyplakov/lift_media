@@ -127,6 +127,12 @@ h6 {
   max-width: 1296px;
   height: 80px;
   margin: 0 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: -o-linear-gradient(359.82deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
   background: linear-gradient(90.18deg, rgba(66, 35, 103, 0.57) 0%, rgba(49, 24, 79, 0.57) 100%);
   border-radius: 0px 0px 15px 15px;
@@ -136,15 +142,42 @@ h6 {
 .header__logo {
   width: 42px;
   height: 42px;
-  margin-top: 15px;
   margin-left: 27px;
 }
 
 .header__searcher {
   width: 516px;
   height: 48px;
+  margin-left: 33px;
   border: 1px solid #412366;
   border-radius: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__input {
+  background-color: transparent;
+}
+
+.header__searcher-button {
+  background-color: transparent;
+  -webkit-transition: all 1ms ease-in-out;
+  -o-transition: all 1ms ease-in-out;
+  transition: all 1ms ease-in-out;
+}
+
+.header__searcher-button-img {
+  color: #ffffff;
+  fill: red;
+}
+
+.header__searcher-button-img:hover {
+  color: #ad6ae7;
+  fill: rgb(58, 142, 105);
 }
 
 @media (max-width: 992px) {

@@ -37,6 +37,8 @@
   max-width: 1296px;
   height: 80px;
   margin: 0 72px;
+  display: flex;
+  align-items: center;
   background: linear-gradient(
     90.18deg,
     rgba(66, 35, 103, 0.57) 0%,
@@ -63,12 +65,30 @@
 .header__logo {
   width: 42px;
   height: 42px;
-  margin-top: 15px;
   margin-left: 27px;
 }
 .header__searcher {
   width: 516px;
   height: 48px;
+  margin-left: 33px;
   border: 1px solid #412366;
   border-radius: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.header__input {
+  background-color: transparent;
+}
+.header__searcher-button {
+  background-color: transparent;
+  transition: all 1ms ease-in-out;
+}
+.header__searcher-button-img {
+  color: #ffffff;
+  fill: red;
+}
+.header__searcher-button-img:hover {
+  color: #ad6ae7;
+  fill: rgb(58, 142, 105);
 }
