@@ -23,19 +23,45 @@
         />
       </div>
       <div class="header__right-side">
-        <nav class="header__navigation text-main">
-          <ul>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+        <nav class="navbar">
+          <div class="container-right-side">
+            <div class="navbar__wrap">
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <ul class="menu text-main" id="menu">
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Help</a></li>
+                <div class="header__searcher_adaptive">
+                  <button class="header__searcher-button_adaptive">
+                    <img
+                      class="header__searcher-button-img_adaptive"
+                      src="img/header/search-icon.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                  <input
+                    class="header__input_adaptive text-main"
+                    type="text"
+                    placeholder="Search related to NFT, Artist... "
+                  />
+                </div>
+              </ul>
+            </div>
+            <div class="header__button">
+              <button class="header__button-text">
+                <a class="text-main" href="#">Connect Wallet</a>
+              </button>
+            </div>
+          </div>
         </nav>
-        <div class="header__button">
-          <button class="header__button-text">
-            <a class="text-main" href="#">Connect Wallet</a>
-          </button>
-        </div>
+        <div class="popup" id="popup"></div>
       </div>
     </div>
   </section>
