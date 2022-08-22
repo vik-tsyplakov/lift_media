@@ -20,13 +20,16 @@
   max-width: 1440px;
   margin: 0px auto;
 }
-
 .wrapper {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+.wrap {
+  background: linear-gradient(180deg, #110620 0%, #150429 100%);
+}
+
 /*---FREQUENTLY USED CLASSES---------------------------------------------------------*/
 .text-main {
   font-family: "Poppins";
@@ -41,12 +44,17 @@
   background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
   border-radius: 18px;
   padding: 15px 20px;
+  transition: all 200ms ease-in-out;
 }
-
+.button:hover {
+  background: linear-gradient(180deg, #fea20f 0%, #fe8a32 100%);
+}
+.button:active {
+  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
+}
 /*---HEADER--------------------------------------------------------------------------*/
 .header__container {
   max-height: 596px;
-  background: linear-gradient(180deg, #110620 0%, #2b0c51 100%);
 }
 .header__block {
   max-width: 1296px;
@@ -406,3 +414,73 @@ ul {
   }
 }
 /*---MAIN----------------------------------------------------------------------------*/
+.main-block {
+  position: relative;
+}
+.main-block__title {
+  display: flex;
+  margin: 145px auto 900px;
+  max-width: 990px;
+  padding: 0 15px;
+  font-size: 52px;
+  line-height: 62px;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 479px) {
+  .main-block__title {
+    font-size: 44px;
+    padding: 0 8px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .main-block__title {
+    font-size: 32px;
+    padding: 0 8px;
+  }
+}
+.main-block__button {
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+@media (max-width: 833px) {
+  .main-block__button {
+    top: 240px;
+  }
+}
+@media (max-width: 661px) {
+  .main-block__button {
+    top: 310px;
+  }
+}
+.button-text {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: #ffffff;
+  white-space: nowrap;
+}
+@media (max-width: 400px) {
+  .button-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.main-block__background-img {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 3;
+  object-fit: cover;
+}
