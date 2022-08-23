@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans:wght@300&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -48,6 +52,23 @@
               <div class="block-slider-nft__title title">
                 <h2>Rare and Super Unique NFT that you’ll love!</h2>
               </div>
+              <div class="block-slider-nft__slider">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </section>
           </div>
         </main>
@@ -55,6 +76,7 @@
       <!-- footer -->
       @@include('_footer.html')
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
