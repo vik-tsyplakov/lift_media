@@ -476,7 +476,7 @@ ul {
 
 .background-circle-1 {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   left: -106px;
   top: 80px;
   width: 610px;
@@ -486,7 +486,7 @@ ul {
 
 .background-circle-2 {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   right: 0px;
   top: 0;
   width: 401px;
@@ -512,15 +512,18 @@ ul {
 /*---MAIN BLOCK-SLIDER-NFT SWIPER SLIDER----------------------------------------------*/
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,14 +533,37 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 240px;
+  height: 260px;
+  margin: 78px 0;
+  background-color: transparent;
+  background-image: url(/img/main/slider/slide_non-active_background.svg);
+  background-repeat: no-repeat;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.swiper-slide-next {
+  height: 418px;
+  width: 387px !important;
+  margin: 0 40px;
+  background-image: url(/img/main/slider/slide_active_background.svg);
+}
+
+.img-nft {
+  width: 266.21px;
+  height: 344.87px;
 }
 
 @media (max-width: 1440px) {

@@ -40,11 +40,21 @@ function closeOnClick() {
 }
 
 // Swiper slider
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  /*pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },*/
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  spaceBetween: 0,
+  slidesPerView: 3,
 });
