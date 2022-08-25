@@ -559,9 +559,13 @@ ul {
   height: 373px;
   width: 346px;
   margin: 0 0;
-  /*background-image: url(/img/main/slider/slide_active_background.svg);
+  background-image: url(/img/main/slider/slide_active_background.svg);
   background-size: 346px 373px;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.swiper-slide-next .img-small-slide {
+  visibility: hidden;
 }
 
 .img-small-slide {
