@@ -55,6 +55,6 @@ const swiper = new Swiper(".mySwiper", {
     enabled: true,
     onlyInViewport: false,
   },
-  spaceBetween: 0,
+  spaceBetween: 20,
   slidesPerView: 3,
 });
