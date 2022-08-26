@@ -540,6 +540,10 @@ ul {
   background-repeat: no-repeat;*/
 }
 
+.slide-container {
+  position: relative;
+}
+
 .swiper-slide img {
   display: block;
   -o-object-fit: cover;
@@ -573,6 +577,70 @@ ul {
   width: 241px;
   position: absolute;
   top: 0;
+}
+
+.swiper-slide.swiper-slide-next .img-nft-1 {
+  height: 290px;
+  width: 210px;
+  margin-top: -55px;
+  margin-left: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide .img-nft-1 {
+  height: 190px;
+  width: 145px;
+  margin-left: 9px;
+  margin-top: -37px;
+}
+
+.slide-block-nft {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.slide-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.slide-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.slide-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide-price-btc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.9204px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.slide-price-number {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 @media (max-width: 1440px) {
