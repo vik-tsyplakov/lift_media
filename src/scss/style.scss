@@ -615,7 +615,7 @@ ul {
     font-size: 32px;
   }
 }
-/*---MAIN BLOCK-SLIDER-NFT SWIPER SLIDER----------------------------------------------*/
+/*---BLOCK-SLIDER-NFT SWIPER SLIDER---------------------------------------------------*/
 .swiper {
   max-width: 1200px;
   height: 420px;
@@ -625,7 +625,6 @@ ul {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -641,8 +640,6 @@ ul {
   height: 260px;
   margin: 78px auto;
   background-color: transparent;
-  /*background-image: url(/img/main/slider/slide_non-active_background.svg);
-  background-repeat: no-repeat;*/
 }
 .slide-container {
   position: relative;
@@ -650,8 +647,6 @@ ul {
 .swiper-slide img {
   display: block;
   object-fit: cover;
-  /*height: 100%;
-  width: 100%;*/
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -666,10 +661,6 @@ ul {
   background-image: url(/img/main/slider/slide_active_background.svg);
   background-size: 346px 373px;
   background-repeat: no-repeat;
-}
-.swiper-slide-visible {
-}
-.swiper-slide-active {
 }
 .swiper-slide.swiper-slide-next .img-small-slide {
   visibility: hidden;
@@ -703,14 +694,14 @@ ul {
 .slide-block-nft {
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 16px;
 }
 .slide-title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  margin-top: 15px;
   line-height: 36px;
   color: #ffffff;
 }
@@ -722,20 +713,81 @@ ul {
 }
 .slide-price {
   display: flex;
+  justify-content: center;
 }
 .slide-price-btc {
+  display: flex;
+  align-items: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20.9204px;
   line-height: 31px;
   color: #ffffff;
+  margin-right: 10px;
 }
 .slide-price-number {
+  display: flex;
+  align-items: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+}
+.swiper-slide.swiper-slide-next .slide-block-nft {
+  top: 42px;
+  left: 20px;
+}
+.swiper-slide.swiper-slide-next .slide-price {
+  margin-top: 40px;
+}
+.swiper-slide.swiper-slide-next .slide-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.swiper-slide.swiper-slide-next .slide-price-btc {
+  font-size: 20px;
+}
+.swiper-slide.swiper-slide-next .slide-price-number {
+  font-size: 16px;
+}
+@media (max-width: 1150px) {
+  .swiper-slide-next {
+    background-image: none;
+  }
+  .swiper-slide.swiper-slide-next .img-small-slide {
+    visibility: visible;
+    position: absolute;
+    top: 80px;
+  }
+  .swiper-slide.swiper-slide-next .slide-block-nft {
+    top: 55px;
+    left: 16px;
+  }
+  .swiper-slide.swiper-slide-next .slide-price {
+    margin-top: 0px;
+  }
+  .swiper-slide.swiper-slide-next .slide-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 36px;
+  }
+  .swiper-slide.swiper-slide-next .slide-price-btc {
+    font-size: 14px;
+  }
+  .swiper-slide.swiper-slide-next .slide-price-number {
+    font-size: 14px;
+  }
+  .swiper-slide.swiper-slide-next .img-nft-1 {
+    height: 190px;
+    width: 145px;
+    margin-left: 9px;
+    margin-top: 10px;
+  }
+}
+/*---BLOCK-SLIDER-NFT BUTTON ---------------------------------------------------------*/
+.block-slider-nft__button {
+  display: flex;
+  margin: 0 auto;
 }
