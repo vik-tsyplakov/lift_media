@@ -550,7 +550,6 @@ ul {
 /*---MAIN BLOCK-SLIDER NFT------------------------------------------------------------*/
 .block-slider-nft {
   position: relative;
-  height: 1000px;
 }
 .background-circle-1 {
   position: absolute;
@@ -790,4 +789,198 @@ ul {
 .block-slider-nft__button {
   display: flex;
   margin: 0 auto;
+}
+/*---BLOCK-TRAVEL-WITH US ------------------------------------------------------------*/
+.block-travel-with-us {
+  position: relative;
+  height: 1000px;
+  display: flex;
+}
+.background-circle-3 {
+  position: absolute;
+  z-index: 3;
+  left: 800px;
+  top: 0px;
+  width: 550px;
+  height: 550px;
+  opacity: 0.7;
+}
+.block-travel-with-us__background-img {
+  max-width: 672px;
+  height: 835px;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  z-index: 3;
+}
+.block-travel-with-us__container {
+  max-width: 471px;
+  padding-right: 40px;
+  padding-top: 315px;
+  margin-left: 834px;
+}
+.block-travel-with-us__title {
+  max-width: 431px;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.block-travel-with-us__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1250px) {
+  .block-travel-with-us__background-img {
+    max-width: 630px;
+    height: 781px;
+  }
+  .block-travel-with-us__container {
+    margin-left: 750px;
+  }
+}
+@media (max-width: 1100px) {
+  .block-travel-with-us__background-img {
+    max-width: 500px;
+    height: 620px;
+  }
+  .block-travel-with-us__container {
+    margin-left: 550px;
+    padding-top: 230px;
+  }
+}
+@media (max-width: 950px) {
+  .block-travel-with-us__background-img {
+    max-width: 400px;
+    height: 496px;
+  }
+  .block-travel-with-us__container {
+    margin-left: 450px;
+    padding-top: 200px;
+  }
+  .block-travel-with-us__title {
+    font-size: 36px;
+    line-height: 150%;
+  }
+  .block-travel-with-us__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 850px) {
+  .block-travel-with-us__background-img {
+    max-width: 300px;
+    height: 372px;
+  }
+  .block-travel-with-us__container {
+    margin-left: 350px;
+    padding-top: 130px;
+  }
+  .block-travel-with-us__title {
+    font-size: 32px;
+  }
+  .block-travel-with-us__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 680px) {
+  .block-travel-with-us__background-img {
+    max-width: 280px;
+    height: 347px;
+  }
+  .block-travel-with-us__container {
+    margin-left: 300px;
+    padding-top: 110px;
+  }
+  .block-travel-with-us__title {
+    font-size: 32px;
+  }
+  .block-travel-with-us__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .block-travel-with-us__background-img {
+    display: none;
+  }
+  .block-travel-with-us__container {
+    margin: 0 auto;
+    padding: 170px 20px 0px;
+  }
+  .block-travel-with-us__title {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto 12px;
+  }
+  .block-travel-with-us__text {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .block-travel-with-us__more-info {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 440px) {
+  .block-travel-with-us__container {
+    margin: 0 auto;
+    padding: 170px 10px 0px;
+  }
+  .block-travel-with-us__more-info {
+    display: block;
+    max-width: 181px;
+  }
+  .instagram-icon {
+    margin: 0 auto;
+    display: flex;
+  }
+  .facebook-icon {
+    margin: 0 auto;
+    display: flex;
+  }
+  .block-travel-with-us__button {
+    margin-bottom: 20px;
+  }
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.block-travel-with-us__more-info {
+  max-width: 321px;
+  display: flex;
+  justify-content: space-around;
+}
+.block-travel-with-us__button {
+  padding: 10px 20px;
+  margin-top: 48px;
+  line-height: 35px;
+  width: 181px;
+}
+.social-buttons {
+  display: contents;
+  justify-content: space-between;
+}
+.discord-icon {
+  margin-top: 5px;
+  margin-left: 9px;
+}
+.instagram-icon {
+  margin-top: 51px;
+  width: 48px;
+  height: 48px;
+}
+.facebook-icon {
+  margin-top: 51px;
+  width: 48px;
+  height: 48px;
+}
+.instagram-button:hover {
+  background-image: url(/img/main/svg.svg);
+  background-repeat: no-repeat;
+  background-size: 48 48;
+}
+.facebook-button:hover {
 }
