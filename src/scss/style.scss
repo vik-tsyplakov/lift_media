@@ -870,11 +870,13 @@ ul {
     margin-left: 450px;
     padding-top: 200px;
   }
-  .block-travel-with-us__title {
+  .block-travel-with-us__title,
+  .block-our-creators__title h2 {
     font-size: 36px;
     line-height: 150%;
   }
-  .block-travel-with-us__text {
+  .block-travel-with-us__text,
+  .block-our-creators__text {
     font-size: 18px;
     line-height: 150%;
   }
@@ -888,10 +890,12 @@ ul {
     margin-left: 350px;
     padding-top: 130px;
   }
-  .block-travel-with-us__title {
+  .block-travel-with-us__title,
+  .block-our-creators__title h2 {
     font-size: 32px;
   }
-  .block-travel-with-us__text {
+  .block-travel-with-us__text,
+  .block-our-creators__text {
     font-size: 16px;
   }
 }
@@ -907,7 +911,8 @@ ul {
   .block-travel-with-us__title {
     font-size: 32px;
   }
-  .block-travel-with-us__text {
+  .block-travel-with-us__text,
+  .block-our-creators__text {
     font-size: 16px;
   }
 }
@@ -925,7 +930,6 @@ ul {
     margin: 0 auto 12px;
   }
   .block-travel-with-us__text {
-    font-size: 16px;
     text-align: center;
     margin: 0 auto;
   }
@@ -1014,4 +1018,30 @@ ul {
 }
 .facebook-button:active {
   background-image: url(/img/main/facebook-icon.svg);
+}
+/*---BLOCK-OUR-CREATORS----------------------------------------------------------------*/
+.block-our-creators {
+  padding: 0 10px;
+}
+.block-our-creators__title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  max-width: 376px;
+  margin: 0 auto 14px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+.block-our-creators__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  display: flex;
+  margin: 0 auto 45px;
+  max-width: 458px;
+  align-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: luminosity;
 }
