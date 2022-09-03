@@ -1045,3 +1045,30 @@ ul {
   color: rgba(255, 255, 255, 0.8);
   mix-blend-mode: luminosity;
 }
+.block-our-creators__creators-photo {
+  height: 590px;
+  width: 100%;
+  margin-bottom: 105px;
+}
+/*---BLOCK-OUR-CREATORS-SWIPER SLIDER2------------------------------------------------*/
+.block-our-creators__creators-photo .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin: 160px auto 0;
+}
+.swiper2 {
+  max-width: 1440px;
+  height: 590px;
+}
+.block-our-creators__creators-photo .swiper-slide > img {
+  width: 100%;
+  max-height: 590px;
+  object-fit: cover;
+  object-position: center;
+}
+.block-our-creators__creators-photo .swiper-slide.swiper-slide-next {
+  background-image: none;
+  display: none;
+}

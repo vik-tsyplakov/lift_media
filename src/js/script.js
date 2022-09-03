@@ -39,7 +39,7 @@ function closeOnClick() {
   body.classList.remove("noscroll");
 }
 
-// Swiper slider
+// Swiper slider 1
 const swiper = new Swiper(".mySwiper", {
   loop: true,
   /*pagination: {
@@ -71,4 +71,28 @@ const swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
     },
   },
+});
+
+// Swiper slider 2
+const swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 22,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  slidesPerView: "auto",
 });
