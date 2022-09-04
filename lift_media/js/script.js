@@ -79,7 +79,7 @@ const swiper2 = new Swiper(".mySwiper2", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 5500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -95,4 +95,5 @@ const swiper2 = new Swiper(".mySwiper2", {
     onlyInViewport: false,
   },
   slidesPerView: "auto",
+  speed: 2000,
 });
