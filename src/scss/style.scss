@@ -1137,3 +1137,63 @@ ul {
     margin: 0 auto 0;
   }
 }
+/*---FOOTER---------------------------------------------------------------------------*/
+.footer {
+  height: 300px;
+  background-color: #000000;
+}
+.footer__container {
+  max-width: 1105px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1075px;
+  margin-top: 67px;
+}
+.footer__logo {
+  margin-top: 6px;
+}
+.footer__sitemap-and-socials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 303px;
+  width: auto;
+}
+.footer__title {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.75;
+}
+.footer__sitemap {
+}
+.footer__socials {
+}
+.footer__head-office-and-email-form {
+}
+.footer__head-office {
+}
+.footer__email-form {
+}
+.footer__contacts {
+  display: flex;
+}
+.footer__email {
+}
+.footer__phone {
+}
+.footer__legal-information {
+}
