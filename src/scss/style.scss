@@ -1108,6 +1108,9 @@ ul {
     max-width: 699px;
     height: 400px;
   }
+  .block-our-creators {
+    margin-bottom: 120px;
+  }
   .block-our-creators__creators-photo .swiper-slide {
     margin: 150px auto 0;
   }
@@ -1120,6 +1123,9 @@ ul {
   }
 }
 @media (max-width: 479px) {
+  .block-our-creators {
+    margin-bottom: 40px;
+  }
   .block-our-creators__creators-photo .swiper-slide {
     margin: 60px auto 0;
   }
@@ -1133,6 +1139,9 @@ ul {
   }
 }
 @media (max-width: 340px) {
+  .block-our-creators {
+    margin-bottom: 0px;
+  }
   .block-our-creators__creators-photo .swiper-slide {
     margin: 0 auto 0;
   }
@@ -1157,9 +1166,8 @@ ul {
 }
 .footer__sitemap-and-socials {
   display: flex;
-  justify-content: space-between;
-  max-width: 303px;
-  width: auto;
+  justify-content: space-around;
+  width: 303px;
 }
 .footer__title {
   font-family: "Cinzel";
@@ -1177,6 +1185,9 @@ ul {
   color: #ffffff;
   opacity: 0.75;
 }
+.footer__mb10-text {
+  margin-bottom: 10px;
+}
 .footer__sitemap {
 }
 .footer__socials {
@@ -1192,6 +1203,30 @@ ul {
 }
 .footer__form {
   display: flex;
+  justify-content: space-between;
+}
+.footer__form-submit {
+  background-image: url(/img/footer/mail-icon.svg);
+  width: 24px;
+  height: 18px;
+  background-color: transparent;
+}
+.footer__form-submit:hover {
+  color: #ffffff;
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+}
+.footer__form-email,
+.footer__form-email.placeholder {
+  width: 230px;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7;
 }
 .footer__line {
   width: 326px;
@@ -1241,4 +1276,53 @@ ul {
   color: #ffffff;
   opacity: 0.6;
   margin-top: 7px;
+}
+@media (max-width: 767px) {
+  .footer__main {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 615px;
+    margin: 40px auto 0;
+  }
+  .footer__sitemap-and-socials {
+    width: 290px;
+  }
+  .footer__head-office-and-email-form {
+    width: 480px;
+  }
+  .footer__contacts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer__logo {
+    margin: auto 0;
+  }
+  .footer__head-office-and-email-form {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 615px) {
+  .footer__contacts {
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer__legal-information {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 456px) {
+  .footer__sitemap-and-socials {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .footer__head-office-and-email-form {
+    max-width: 280px;
+    text-align: center;
+  }
+  .footer__line {
+    width: auto;
+  }
 }

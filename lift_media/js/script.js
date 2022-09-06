@@ -6,7 +6,7 @@ const body = document.body;
 // Clone the menu to set your own styles for the mobile version
 const menu = document.querySelector("#menu").cloneNode(1);
 
-// При клике на иконку hamb вызываем ф-ию hambHandler
+// When clicking on the hamb icon, we call the function-  hambHandler
 hamb.addEventListener("click", hambHandler);
 
 // Perform actions on click
@@ -96,4 +96,15 @@ const swiper2 = new Swiper(".mySwiper2", {
   },
   slidesPerView: "auto",
   speed: 2000,
+});
+
+// Implementing a Custom Error Message
+const email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("Please enter a valid email address");
+  } else {
+    email.setCustomValidity("");
+  }
 });
