@@ -98,7 +98,7 @@ const swiper2 = new Swiper(".mySwiper2", {
   speed: 2000,
 });
 
-// Implementing a Custom Error Message
+// Implementing a Custom Error Message at Form
 const email = document.getElementById("mail");
 
 email.addEventListener("input", function (event) {
