@@ -42,10 +42,14 @@ function closeOnClick() {
 // Swiper slider 1
 const swiper = new Swiper(".mySwiper", {
   loop: true,
-  /*pagination: {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },*/
+  },
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
